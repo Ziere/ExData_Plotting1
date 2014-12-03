@@ -94,21 +94,57 @@ The four plots that you will need to construct are shown below.
 
 ### Plot 1
 
-
 ![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
-
 
 ### Plot 2
 
 ![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
 
-
 ### Plot 3
 
 ![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
-
 
 ### Plot 4
 
 ![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
+
+## My project
+
+How to use each of the plotX.R files
+ 
+1. Clone this project to your computer
+2. In the file makePlot.R change your work directory in other case is used the current directory
+3. Run plotX.R to get the proper .png file with the plot in the current directory
+
+Plot obtained from the code
+
+### Plot 1 from plot1.R
+
+![plot of my plot 1](plot1.png)
+
+### Plot 2 from plot2.R
+
+![plot of my plot 2](plot2.png)
+
+### Plot 3 from plot3.R
+
+![plot of my plot 3](plot3.png)
+
+### Plot 4 from plot4.R
+
+![plot of my plot 4](plot4.png)
+
+Extra functions
+
+You can also display the plot using R running the makePlot using the function makePlot:
+
+* source("makePlot.R")
+* makePlot(1) #use numbers between 1 and 4 to get each of the plots in the ide
+
+Also is possible to generate a small .csv with the data between the dates using:
+
+* source("makePlot.R")
+* dt <- makeDT() #create the csv file and the dt is returning also
+
+This function are used specially to avoid the full read of the data each time you're plotting
